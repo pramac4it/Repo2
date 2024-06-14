@@ -8,12 +8,6 @@ pipeline {
     }
  
     stages {
-        stage('Checkout') {
-            steps {
-                // Step to checkout code from the repository
-                git branch: 'main', url: 'https://github.com/pramac4it/Repo2.git'
-            }
-        }
  
         stage('Build') {
             steps {
